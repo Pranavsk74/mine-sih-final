@@ -1,0 +1,68 @@
+{
+  "lstm": {
+    "accuracy": 94.73,
+    "precision": 0.9492,
+    "recall": 0.9473,
+    "f1_score": 0.9474,
+    "confusion_matrix": [
+      [
+        1040,
+        17,
+        0,
+        0
+      ],
+      [
+        103,
+        1189,
+        2,
+        0
+      ],
+      [
+        0,
+        18,
+        122,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        437
+      ]
+    ],
+    "model_name": "lstm"
+  },
+  "transformer": {
+    "accuracy": 93.78,
+    "precision": 0.9371,
+    "recall": 0.9378,
+    "f1_score": 0.937,
+    "confusion_matrix": [
+      [
+        1018,
+        39,
+        0,
+        0
+      ],
+      [
+        66,
+        1197,
+        31,
+        0
+      ],
+      [
+        0,
+        14,
+        93,
+        33
+      ],
+      [
+        0,
+        0,
+        0,
+        452
+      ]
+    ],
+    "model_name": "transformer"
+  }
+}
