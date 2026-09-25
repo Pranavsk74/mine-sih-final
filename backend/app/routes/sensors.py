@@ -16,7 +16,7 @@ from ml.inference import InferenceEngine
 
 router = APIRouter(prefix="/api/sensors", tags=["Sensors"])
 
-MODELS_DIR = "backend/models"
+MODELS_DIR = os.path.join(BACKEND_DIR, "models")
 inference_engine = InferenceEngine(models_dir=MODELS_DIR)
 
 @router.get("", response_model=PaginatedSensorResponse)

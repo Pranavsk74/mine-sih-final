@@ -14,7 +14,7 @@ from app.models import ModelMetric
 
 router = APIRouter(prefix="/api/ml", tags=["ML Models"])
 
-MODELS_DIR = "backend/models"
+MODELS_DIR = os.path.join(BACKEND_DIR, "models")
 METRICS_PATH = os.path.join(MODELS_DIR, "metrics.json")
 HISTORY_PATH = os.path.join(MODELS_DIR, "history.json")
 

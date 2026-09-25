@@ -16,7 +16,7 @@ from ml.inference import InferenceEngine
 
 router = APIRouter(prefix="/api/predict", tags=["Predictions"])
 
-MODELS_DIR = "backend/models"
+MODELS_DIR = os.path.join(BACKEND_DIR, "models")
 inference_engine = InferenceEngine(models_dir=MODELS_DIR)
 
 @router.post("", response_model=PredictionResponse)
